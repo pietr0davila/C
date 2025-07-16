@@ -9,10 +9,12 @@ int main(void) {
 
     char_pointer = char_array;
     int_pointer = int_array;
-
+    // Define o valor dos ponteiros como o endereço do primeiro elemento de cada array respectiva
+    
     for (int i = 0; i < 5; i++) {
         printf("[integer pointer] points to %p, that contains %d\n", int_pointer, *int_pointer);
-        int_pointer++;
+        // Exibe o valor apontado e o conteúdo do ponteiro
+        int_pointer++; // Avança para o próximo item da array
     }
     for (int i = 0; i < 5; i++) {
         printf("[char pointer] points to %p, that contains %c\n", char_pointer, *char_pointer);
